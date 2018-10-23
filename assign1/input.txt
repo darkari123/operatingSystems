@@ -1,0 +1,10 @@
+al 12
+az 9
+ak 15
+ca 22
+co 13
+tx 22
+nm 8
+ny 19
+nc 22
+wy 5
