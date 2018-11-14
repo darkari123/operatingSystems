@@ -1,0 +1,73 @@
+Project 3   
+
+Three students are competing for a scholarship of $4,000. Suppose the 
+scholarship is awarded in a FCFS fashion. Each time each one can get
+25% of the available fund.
+
+Use three threads to simulate this. Each thread should execute in a loop.
+When the fund runs out, stop all the threads and terminate the program.
+And then you add all the money given out, if the total does not add up
+to $4000, your program is not correct.
+
+a. Write the program without considering the mutual exclusion. Run the
+program several times to show that mutual exclusion is not guaranteed and
+the result is not correct.
+
+b. Write the program again considering the mutual exclusion. Run the 
+program several times to show that mutual exclusion is guaranteed.
+
+To make longer execution of threads, use some sleep(n) functions in 
+the program. Experiment with n to choose the best one to show the 
+results.
+
+Example of an incorrect result:
+
+A=1000
+B=750
+C=750
+B=375
+A=375 
+
+...
+Finally, the total money given out is not equal to $4000.
+
+Example of a correct result:
+
+A=1000    
+B=750
+C=563 (round up to the ceiling of the number if the result is not an integer)
+A=422
+C=317
+B=237
+A=178
+A=134
+B=100
+C=75
+B=56
+C=42
+A=32
+C=24
+B=18
+C=13
+C=10
+A=8
+C=6
+B=4
+A=3
+A=2
+B=2
+C=1
+B=1
+C=1
+A=1
+
+Total given out: 4000
+
+Submission:
+
+In order not to lose any files, you'd better zip all your files into a .zip file. 
+Submit your project to TRACS. You should write a readme textfile telling the grader how 
+to run your programs. Without this file, it is very likely that your project
+will not be run properly. 
+
+  
